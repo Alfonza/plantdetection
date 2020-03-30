@@ -133,7 +133,7 @@ header h1{
         	list-style: none;
         	padding: 15px 10px;
         	border-bottom: 1px solid rgba(100,100,100,0.3);
-
+          cursor: pointer;
         }
         #panel .toggle-btn
         {
