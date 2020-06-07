@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About us</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+	<link rel="icon" href="../static/prologo.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light" style="font-size: 2rem">
+		<a class="navbar-brand" style="font-size: inherit;" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="1check.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="explore.html">Explore!</a></li>
+				<li class="nav-item"><a class="nav-link" id="recent" href="recent.html">Recents</a></li>
+			</ul>
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item" id="login"><a class="nav-link" href="new12.htm">Login/signup</a></li>
+				<li class="nav-item" id="logout"><a class="nav-link" onclick="logout()" href="">Logout</a></li>
+			</ul>
+		</div>
+	</nav>	
+<section>
+	<div class="container">
+		<h1 class="heading">meet the team</h1>
+		<div class="card-wrapper">
+			<div class="card">
+				<img src="../static/download.jpg" alt="card background" class="card-img">
+				<img src="../static/remold.jpeg" alt="profile image" class="profile-img">
+				<h1>Remold</h1>
+				<p class="job-tittle">software</p>
+				<p class="about">about</p>
+				<a href="#" class="btn"> contact</a>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-squre"></i></a></li>
+			</div>
+			<div class="card">
+				<img src="../static/download.jpg" alt="card background" class="card-img">
+				<img src="../static/sarath.jpg" alt="profile image" class="profile-img">
+				<h1>Sarath</h1>
+				<p class="job-title">software</p>
+				<p class="about">about</p>
+				<a href="#" class="btn"> contact</a>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-squre"></i></a></li>
+				</ul>
+			</div>
+			<div class="card">
+				<img src="../static/download.jpg" alt="card background" class="card-img">
+				<img src="../static/alf1.jpg" alt="profile image" class="profile-img">
+				<h1>Late Alfonsa(2020)</h1>
+				<p class="job-title">software</p>
+				<p class="about">about</p>
+				<a href="#" class="btn"> contact</a>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-squre"></i></a></li>
+			</div>
+			<div class="card">
+				<img src="../static/download.jpg" alt="card background" class="card-img">
+				<img src="../static/ash.jpg" alt="profile image" class="profile-img">
+				<h1>Ashwin Babu</h1>
+				<p class="job-title">software</p>
+				<p class="about">about</p>
+				<a href="#" class="btn"> contact</a>
+				<ul class="social-media">
+					<li><a href="#"><i class="fab fa-facebook-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram-squre"></i></a></li>
+					<li><a href="#"><i class="fab fa-google-plus-squre"></i></a></li>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+<script type="text/javascript">
+	if(localStorage.getItem('name')==null){
+       document.getElementById('recent').style.display="none";
+       $("#logout").hide();
+   }
+   else{
+    $("#login").hide();
+         $('#logout').show();
+         
+    }
+    function logout(){
+             val=confirm('are you sure to log out?');
+             if(val){
+                localStorage.removeItem('name');
+                localStorage.removeItem('email');
+            }
+            $("#logout").hide();
+         $('#login').show();
+        }
+</script>
+</html>>
